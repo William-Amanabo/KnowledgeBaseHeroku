@@ -1,0 +1,8 @@
+problems 
+
+//delete works but doesnt redirect
+//sideNav needs to close on link click
+on desktop view, need to limit title name
+on desktop view need to change scroll bar 
+//need a way handle redirect from direct access of react router routes
+need to handle 404 requests
