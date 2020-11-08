@@ -90,7 +90,8 @@ const Articles = ({ userId,setMessages,history,notFound }: PropTypes) => {
           e.preventDefault();
 
           t3.to(card, { y: -20, opacity: 0, duration: 0.3 }).then(() => {
-            card.className = card.className + " expand";
+            card.className= "card expand"
+            //card.classList.toggle('expand');
             t3.to(blackScreen, {
               backgroundColor: "rgba(0, 0, 0, 0.5)",
               duration: 0.3,
@@ -108,7 +109,8 @@ const Articles = ({ userId,setMessages,history,notFound }: PropTypes) => {
           t3.to(card, { y: -20, opacity: 0, duration: 0.3 })
             .to(blackScreen, { backgroundColor: "transparent", duration: 0.3 })
             .then(() => {
-              card.className = originalClassName;
+              card.className= "card"
+              //card.classList.toggle('expand');
               t3.fromTo(
                 card,
                 { y: -20, opacity: 0, duration: 0.5 },

@@ -37,7 +37,7 @@ export default function AppContainer({
       });
 
       hamburger.addEventListener('mouseout',()=>{
-        t1.reversed()? t1.play(): t1.reverse();
+        if(t1.reversed() === false) t1.reverse()
         //console.log("button clicked")
       })
     }
